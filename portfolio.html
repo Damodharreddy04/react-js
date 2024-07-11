@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <style>
+    img{
+    width: 65%;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+  #h4 {
+    display: flex;
+    align-items: center;
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFj0imuRGNxg8yI7B2ke41PNfZvbHu09H54ornnJQDkQ&s" width="40" height="70">
+    </div>
+    <div><a class="navbar-brand" href="#">AITS</a>
+    </div>
+      <ul class="nav navbar-nav">
+      <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+      <li class="dropdown"><a data-toggle="dropdown" href="#">Carrier <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-earphone" ></span> Contact us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+
+</nav>
+  
+<div class="jumbotron jumbotron-fluid jumbotron-custom">
+    <div class="container">
+      
+      <h1 class="display-4">Welcome to My Website</h1>
+      <p class="lead">This is a simple homepage created using HTML, CSS, and Bootstrap.</p>
+    </div>
+  </div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+      </svg>
+      <h3><a href="https://www.facebook.com/aitsrajampetnews/" style="color:black;">Face Book</a></h3>
+      <p >Click above to go to page</p>
+    </div>
+    <div class="col-sm-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+      </svg>
+      <h3><a href="https://twitter.com/Annamacharya4?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" style="color:black;">Twitter-X</a></h3>
+     <p>Click above to go to page</p>
+    </div>
+    <div class="col-sm-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+      </svg>
+      <h3><a href="https://www.instagram.com/annamacharya_group/?hl=en" style="color:black;">Instagram</a></h3>        
+      <p>Click above to go to page</p>
+    </div>
+    <div class="col-sm-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+      </svg>
+      <h3><a href="https://www.youtube.com/watch?v=icJYnpm8ahU" style="color:black;">Youtube</a></h3>        
+      <p>Click above to go to page</p>
+    </div>
+    <div class="col-sm-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+        <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+      </svg>
+      <h3><a href="https://www.google.com/search?q=annamacharya+institute+of+technology+%26+sciences&oq=annamacharya+institute+of+technology+%26+sciences&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIGCAIQRRg7MgYIAxBFGDsyBggEEEUYQDIGCAUQRRg9MgYIBhBFGDwyBggHEEUYPagCALACAA&sourceid=chrome&ie=UTF-8" style="color:black;">Google</a></h3>        
+      <p>Click above to go to page</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container mt-5 p-4">
+  <div class="row p-3">
+    <div class="col-sm-6">
+      <h4 style="text-align: center;">Line Graph</h5>
+      <p style="text-align: center; font-size: large; align-items: center;">A line graph—also known as a line plot or a line chart—is a graph that uses lines to connect individual data points. 
+      A line graph displays quantitative values over a specified time interval.</p>
+      <a href="https://www.investopedia.com/terms/l/line-graph.asp#:~:text=A%20line%20graph%E2%80%94also%20known,over%20a%20specified%20time%20interval." class="btn btn-primary">To know more..</a>
+    </div>
+    
+    <div class="col-sm-6">
+      <div id="myChart" style="width:100%; max-width:500px; height:400px;"></div>
+      <script>
+        google.charts.load('current',{packages:['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+        // Set Data
+        const data = google.visualization.arrayToDataTable([
+        ['Price', 'Size'],
+        [50,7],[60,8],[70,8],[80,9],[90,9],
+        [100,9],[110,10],[120,11],
+        [130,14],[140,14],[150,15]
+        ]);
+        // Set Options
+        const options = {
+        title: 'House Prices vs. Size',
+        hAxis: {title: 'Square Meters'},
+        vAxis: {title: 'Price in Millions'},
+        legend: 'none'
+        };
+        // Draw
+        const chart = new google.visualization.LineChart(document.getElementById('myChart'));
+        chart.draw(data, options);
+        }
+      </script>
+    </div>
+  </div> 
+  <br>
+  <br>
+  <div class="row p-3">
+    <div class="col-sm-6">
+      <canvas id="myChart4" style="width:100%;max-width:700px"></canvas>
+
+<script>
+var xyValues = [
+  {x:50, y:7},
+  {x:60, y:8},
+  {x:70, y:8},
+  {x:80, y:9},
+  {x:90, y:9},
+  {x:100, y:9},
+  {x:110, y:10},
+  {x:120, y:11},
+  {x:130, y:14},
+  {x:140, y:14},
+  {x:150, y:15}
+];
+
+new Chart("myChart4", {
+  type: "scatter",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "rgb(0,0,255)",
+      data: xyValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      xAxes: [{ticks: {min: 40, max:160}}],
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+</script>
+  </div>
+  <div class="col-sm-6">HI</div>
+</div>
+
+  <div class="row p-3">
+    <div class="col-sm-6">
+      <div id="myChart1" style="width:100%; max-width:500px; height:400px;"></div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+const data = google.visualization.arrayToDataTable([
+  ['Contry', 'Mhl'],
+  ['Italy',55],
+  ['France',49],
+  ['Spain',44],
+  ['USA',24],
+  ['Argentina',15]
+]);
+
+const options = {
+  title:'World Wide Wine Production'
+};
+
+const chart = new google.visualization.BarChart(document.getElementById('myChart1'));
+  chart.draw(data, options);
+}
+</script>
+    </div>
+    <div class="col-sm-6">
+      <h4 style="text-align: center;">Bar Graph</h5>
+      <p style="text-align: center; font-size: large; align-items: center;">A bar chart or bar graph is a chart or graph that presents categorical
+         data with rectangular bars with heights or lengths proportional to the values that they represent.
+         The bars can be plotted vertically or horizontally.</p>
+      <a href="https://en.wikipedia.org/wiki/Bar_chart#:~:text=A%20bar%20chart%20or%20bar,sometimes%20called%20a%20column%20chart." class="btn btn-primary">To know more..</a>
+    </div>
+    
+    
+  </div> 
+  <br>
+  <br>
+  <div class="row p-3">
+    <div class="col-sm-6">
+      <h4 style="text-align: center;">Scatter Plot</h5>
+      <p style="text-align: center; font-size: large; align-items: center;">A scatter plot (aka scatter chart, scatter graph) uses dots to represent 
+        values for two different numeric variables.
+         The position of each dot on the horizontal and vertical axis indicates values for an individual data point.</p>
+      <a href="https://www.atlassian.com/data/charts/what-is-a-scatter-plot#:~:text=A%20scatter%20plot%20(aka%20scatter,to%20observe%20relationships%20between%20variables." class="btn btn-primary">To know more..</a>
+    </div>
+    
+    <div class="col-sm-6">
+      <div id="myChart2" style="width:100%; max-width:500px; height:400px;"></div>
+
+<script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+const data = google.visualization.arrayToDataTable([
+  ['Price', 'Size'],
+  [50,7],[60,8],[70,8],[80,9],[90,9],
+  [100,9],[110,10],[120,11],
+  [130,14],[140,14],[150,15]
+]);
+// Set Options
+const options = {
+  title: 'House Prices vs. Size',
+  hAxis: {title: 'Square Meters'},
+  vAxis: {title: 'Price in Millions'},
+  legend: 'none'
+};
+// Draw
+const chart = new google.visualization.ScatterChart(document.getElementById('myChart2'));
+chart.draw(data, options);
+}
+</script>
+    </div>
+  </div>
+  <br><br>
+  <div class="row p-3">
+    <div class="col-sm-6">
+      <div id="myChart3" style="width:100%; max-width:500px; height:400px;"></div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+const data = google.visualization.arrayToDataTable([
+  ['Contry', 'Mhl'],
+  ['Italy',54.8],
+  ['France',48.6],
+  ['Spain',44.4],
+  ['USA',23.9],
+  ['Argentina',14.5]
+]);
+
+const options = {
+  title:'World Wide Wine Production'
+};
+
+const chart = new google.visualization.PieChart(document.getElementById('myChart3'));
+  chart.draw(data, options);
+}
+</script>
+    </div>
+    <div class="col-sm-6">
+      <h4 style="text-align: center;">Pie Chart</h5>
+      <p style="text-align: center; font-size: large; align-items: center;">A pie chart, sometimes called a circle chart, 
+        is a way of summarizing a set of nominal data or displaying the different values of a given variable (e.g. percentage distribution). 
+        This type of chart is a circle divided into a series of segments. Each segment represents a particular category.</p>
+      <a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch9/pie-secteurs/5214826-eng.htm#:~:text=A%20pie%20chart%2C%20sometimes%20called,segment%20represents%20a%20particular%20category." class="btn btn-primary">To know more..</a>
+    </div>
+    
+    
+  </div>
+</div>
+
+<div class="container mt-5 p-4">
+  <div class="row p-3">
+    <div class="col-sm-6">
+      <div class="card" style="width: 18rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqySMOmDSISUAgLHmnESj7mRTTcgn7Tt-QHGSmFwamvw&s" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Astronaut</h5>
+          <p class="card-text" style="text-align: centerx;">An astronaut is a person trained, 
+            equipped, and deployed by a human spaceflight program to serve as a commander or crew member aboard a spacecraft.</p>
+          <a href="https://en.wikipedia.org/wiki/Astronaut" class="btn btn-primary">Click to know more</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-sm-6">
+      <div class="card" style="width: 18rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeToCNBKXjKGA36GSRAuPB_ceH_UuplGJX5QnaLT_inw&s" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Milkyway</h5>
+          <p class="card-text" style="text-align: center;">The Milky Way is the galaxy that includes the Solar System,
+             with the name describing the galaxy's appearance from Earth: 
+            a hazy band of light seen in the night sky formed from stars that cannot be individually distinguished by the naked eye.</p>
+          <a href="https://en.wikipedia.org/wiki/Milky_Way" class="btn btn-primary">Click to know more</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+<br>
+
+<footer class="bg-body-tertiary text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3"></div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright:
+    <a class="text-body" href="https://mdbootstrap.com/">www.Damodharreddy04.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</body>
+</html>
